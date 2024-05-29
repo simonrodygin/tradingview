@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import MainPage from '../Pages/main.page.ts';
+import MainPage from '../pages/main.page.ts';
 import ChartPage from '../pages/chart.page.ts';
 
 test.use({
