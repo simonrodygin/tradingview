@@ -40,7 +40,7 @@ class ChartPage {
     async technicalsScreenShot() {
         await this.technicals.scrollIntoViewIfNeeded();
         await expect(this.page.locator('[data-name="details-technicals"]')).toHaveScreenshot({ maxDiffPixels: 100 });
-        await expect(this.page.locator('[data-name="details-technicals"] +  .widgetWrapper-BSF4XTsE')).toHaveScreenshot({ maxDiffPixels: 100 });
+        await expect(this.page.locator('[data-name="details-technicals"] + *')).toHaveScreenshot({ maxDiffPixels: 100 });
     }
 
     
